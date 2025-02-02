@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="STYLESHEET" href="style.css" />
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <p style="color: brown; background-color: burlywood">
+      <marquee>welcome to my website Guessing game.</marquee>
+    </p>
+    <section class="main_section">
+      <section class="top_main_section">
+        <div class="top_section">
+          Guessing Game
+          <p><button class="reset" onclick="reset()">Reset</button></p>
+          <p
+            style="
+              position: absolute;
+              top: 0px;
+              left: 10px;
+              font-size: medium;
+              color: darkseagreen;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            "
+          ></p>
+        </div>
+        <h1 class="Guess">?</h1>
+      </section>
+      <section class="bottom_main_section">
+        <div class="bottom_left">
+          <input
+            id="guessedNumber"
+            type="number"
+            placeholder="Enter Your Number Here"
+          />
+
+          <button
+            onclick="guessedAnswer()"
+            style="padding-left: 60px; padding-right: 60px"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="bottom_right">
+          <p class="result">sucess :</p>
+          <p class="score">score:</p>
+        </div>
+      </section>
+      <div class="last">
+        <button onclick="reset()" class="reset_sub">reset</button>
+        <a href="index.html"><button class="home_sub">Home</button></a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
